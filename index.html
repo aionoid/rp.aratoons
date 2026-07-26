@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AraToons Kodi Repository</title>
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+				background: #0f0f1a;
+				color: #e0e0e0;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 40px 20px;
+			}
+			.container { max-width: 720px; width: 100%; }
+			header {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			header h1 {
+				font-size: 2.2rem;
+				color: #fff;
+				margin-bottom: 8px;
+			}
+			header h1 span { color: #f97316; }
+			header p { color: #9ca3af; font-size: 1rem; }
+			.method {
+				background: #1a1a2e;
+				border: 1px solid #2a2a4a;
+				border-radius: 12px;
+				padding: 24px;
+				margin-bottom: 24px;
+			}
+			.method h2 {
+				font-size: 1.2rem;
+				color: #f97316;
+				margin-bottom: 4px;
+			}
+			.method .subtitle {
+				color: #6b7280;
+				font-size: 0.85rem;
+				margin-bottom: 16px;
+			}
+			.method ol {
+				padding-left: 20px;
+			}
+			.method li {
+				margin-bottom: 10px;
+				line-height: 1.6;
+				color: #d1d5db;
+			}
+			.method li strong { color: #fff; }
+			.url-box {
+				display: block;
+				background: #0f0f1a;
+				border: 1px solid #333;
+				border-radius: 6px;
+				padding: 8px 12px;
+				margin-top: 6px;
+				font-family: 'Courier New', monospace;
+				font-size: 0.82rem;
+				color: #4ade80;
+				word-break: break-all;
+				user-select: all;
+			}
+			.quick-links {
+				display: flex;
+				gap: 12px;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-top: 20px;
+			}
+			.quick-links a {
+				display: inline-block;
+				background: #f97316;
+				color: #fff;
+				text-decoration: none;
+				padding: 10px 20px;
+				border-radius: 8px;
+				font-weight: 600;
+				font-size: 0.9rem;
+				transition: background 0.2s;
+			}
+			.quick-links a:hover { background: #ea580c; }
+			.quick-links a.secondary {
+				background: #374151;
+			}
+			.quick-links a.secondary:hover { background: #4b5563; }
+			footer {
+				margin-top: auto;
+				padding-top: 40px;
+				text-align: center;
+				color: #4b5563;
+				font-size: 0.8rem;
+			}
+			footer a { color: #6b7280; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Ara<span>Toons</span></h1>
+				<p>Kodi Addon Repository &mdash; Arabic Cartoons &amp; Anime</p>
+			</header>
+
+			<!-- Quick download buttons -->
+			<div class="quick-links">
+				<a href="repository.repository.aratoons-1.0.2.zip">Install Repository ZIP</a>
+				<a class="secondary" href="zips/plugin.video.stardima/plugin.video.stardima-1.5.8.zip">Download Addon ZIP</a>
+			</div>
+
+			<!-- Bare links for Kodi File Manager to discover files -->
+			<br>
+
+			<!-- Method 1 -->
+			<div class="method">
+				<h2>Method 1 &mdash; Install from ZIP URL</h2>
+				<p class="subtitle">Fastest way &mdash; no extra steps needed</p>
+				<ol>
+					<li>Open <strong>Kodi</strong>
+						and go to <strong>Add-ons</strong></li>
+					<li>Click the <strong>Open Box icon</strong>
+						(top left) &rarr; <strong>Install from zip file</strong></li>
+					<li>Enter this URL:</li>
+				</ol>
+				<span class="url-box">https://raw.githubusercontent.com/aionoid/rp.aratoons/main/zips/repository.repository.aratoons/repository.repository.aratoons-1.0.2.zip</span>
+				<ol start="4">
+					<li>Wait for the &ldquo;Repository enabled&rdquo; notification</li>
+					<li>Go to <strong>Add-ons</strong>&rarr; <strong>Install from repository</strong>&rarr; <strong>AraToons Repository</strong></li>
+					<li>Select <strong>AraToons</strong>
+						and click <strong>Install</strong></li>
+				</ol>
+			</div>
+
+			<!-- Method 2 -->
+			<div class="method">
+				<h2>Method 2 &mdash; Install using File Manager</h2>
+				<p class="subtitle">Add our GitHub Pages as a source, then browse for the ZIP</p>
+				<ol>
+					<li>Go to <strong>Settings</strong>&rarr; <strong>File Manager</strong>&rarr; <strong>Add source</strong></li>
+					<li>Enter this URL:</li>
+				</ol>
+				<span class="url-box">https://aionoid.github.io/repository.aratoons/</span>
+				<ol start="3">
+					<li>Name it <strong>&ldquo;AraToons&rdquo;</strong></li>
+					<li>Go to <strong>Add-ons</strong>&rarr; <strong>Open Box icon</strong>&rarr; <strong>Install from zip file</strong></li>
+					<li>Select <strong>AraToons</strong>
+						source &rarr; find <strong><a href="repository.repository.aratoons-1.0.2.zip" style="color:#6b7280;">repository.repository.aratoons-1.0.2.zip</a></strong></li>
+
+					<li>Wait for the notification, then go to <strong>Install from repository</strong>&rarr; <strong>AraToons Repository</strong></li>
+					<li>Select <strong>AraToons</strong>
+						and click <strong>Install</strong></li>
+				</ol>
+			</div>
+
+			<footer>
+				<p>Source code on <a href="https://github.com/aionoid/rp.aratoons">GitHub</a></p>
+			</footer>
+		</div>
+	</body>
+</html>

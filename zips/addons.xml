@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+        <addon id="plugin.video.stardima" name="AraToons" version="1.5.8" provider-name="AraToons">
+                <requires>
+                        <import addon="xbmc.python" version="3.0.0" />
+                        <import addon="script.module.requests" version="2.18.4" />
+                        <import addon="script.module.six" version="1.12.0" />
+                        <import addon="script.module.pycryptodome" version="3.4.3" />
+                </requires>
+                <extension point="xbmc.python.pluginsource" library="default.py">
+                        <provides>video</provides>
+                </extension>
+                <extension point="xbmc.addon.metadata">
+                        <summary lang="en">AraToons - Cartoons &amp; Anime</summary>
+                        <description lang="en">Watch cartoons and anime from StarDima</description>
+                        <platform>all</platform>
+                        <license>MIT</license>
+                        <forum></forum>
+                        <website></website>
+                        <source></source>
+                        <email></email>
+                        <assets>
+                                <icon>icon.png</icon>
+                                <fanart>fanart.jpg</fanart>
+                        </assets>
+                </extension>
+        </addon>
+
+        <addon id="repository.repository.aratoons" name="AraToons Repository" version="1.0.2"
+                provider-name="AraToons">
+                <extension point="xbmc.addon.repository" name="AraToons Repository">
+                        <dir>
+                                <info compressed="false">
+                                        https://raw.githubusercontent.com/aionoid/rp.aratoons/main/zips/addons.xml</info>
+                                <checksum>
+                                        https://raw.githubusercontent.com/aionoid/rp.aratoons/main/zips/addons.xml.md5</checksum>
+                                <datadir zip="true">
+                                        https://raw.githubusercontent.com/aionoid/rp.aratoons/main/zips/</datadir>
+                        </dir>
+                </extension>
+                <extension point="xbmc.addon.metadata">
+                        <summary>AraToons Kodi addon repository</summary>
+                        <description>Repository for AraToons (plugin.video.stardima) and other
+                                Arabic streaming addons.</description>
+                        <platform>all</platform>
+                        <language></language>
+                        <email></email>
+                        <source>https://github.com/aionoid/rp.aratoons</source>
+                        <news>v1.0.2 - Initial release</news>
+                </extension>
+        </addon>
+
+</addons>
