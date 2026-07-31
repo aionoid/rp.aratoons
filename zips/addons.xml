@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-        <addon id="plugin.video.stardima" name="AraToons" version="1.5.16" provider-name="AraToons">
+        <addon id="plugin.video.stardima" name="AraToons" version="1.5.17" provider-name="AraToons">
                 <requires>
                         <import addon="xbmc.python" version="3.0.0" />
                         <import addon="script.module.requests" version="2.18.4" />
